@@ -8,6 +8,6 @@ from django.http import HttpResponse
 def projects(request):
     return render(request, 'projects.html')
 def project(request):
-    return HttpResponse(f'You are on the project (no s) page.')
+    return render(request, 'project.html')
 def strproject(request, words):
     return HttpResponse(f'You have successfully reached the strprojects page! using {words} as an ID.')

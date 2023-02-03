@@ -9,6 +9,11 @@
     <script src='main.js'></script -->
 </head>
 <body>
+    <h1> This is a header, located in main.html! </h1>
     {% include 'navbar.html' %}
+
+    {% block content %}
+    <!-- Information stored within a template, that is also wrapped in block content tags, will be stored here -->
+    {% endblock %}
 </body>
 </html>
