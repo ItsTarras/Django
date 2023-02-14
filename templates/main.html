@@ -10,8 +10,18 @@
 </head>
 <body>
     <h1> This is a header, located in main.html! </h1>
+    <!-- This parses in the msg variable from the function located in views.py-->
+    <P> {{ msg }} </P>
+
+    <!-- Adds navbar.html to the end of it-->
     {% include 'navbar.html' %}
 
+    <!--Include the navigation buttons here. -->
+    <button> My CV </button>
+    <button> Cover Letter </button>
+    <Button> About me </Button>
+    
+    <!-- This is where the inserted block content will be written.-->
     {% block content %}
     <!-- Information stored within a template, that is also wrapped in block content tags, will be stored here -->
     {% endblock %}

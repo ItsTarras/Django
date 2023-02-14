@@ -11,3 +11,6 @@ def project(request):
     return render(request, 'project.html')
 def strproject(request, words):
     return HttpResponse(f'You have successfully reached the strprojects page! using {words} as an ID.')
+def homepage(request):
+    msg = "Hello, dingus!"
+    return render(request, 'main.html', {'msg':msg})
