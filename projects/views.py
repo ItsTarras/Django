@@ -14,3 +14,6 @@ def strproject(request, words):
 def homepage(request):
     msg = "Hello, dingus!"
     return render(request, 'main.html', {'msg':msg})
+def cvpage(request):
+    #Potentially add an api get request here?
+    return render(request, 'CV.html')
