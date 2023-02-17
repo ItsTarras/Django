@@ -17,3 +17,5 @@ def homepage(request):
 def cvpage(request):
     #Potentially add an api get request here?
     return render(request, 'CV.html')
+def about(request):
+    return render(request, 'about.html')

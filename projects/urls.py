@@ -6,5 +6,6 @@ urlpatterns = [
     path('project/', views.project, name="Singular project"),
     path('strproject/<str:words>', views.strproject, name="String used"),
     path('', views.homepage, name="Homepage"),
-    path('tarrascv', views.cvpage, name='cv')
+    path('tarrascv', views.cvpage, name='cv'),
+    path('about', views.about, name="about")
 ]

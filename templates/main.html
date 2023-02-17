@@ -9,17 +9,17 @@
     <script src='main.js'></script -->
 </head>
 <body>
-    <h1> This is a header, located in main.html! </h1>
+    <h1 style="text-align:center; border-color:black; border-style:solid" > Welcome to my Portfolio, located in main.html! </h1>
     <!-- This parses in the msg variable from the function located in views.py-->
     <P> {{ msg }} </P>
-
+    <img style="border-style:solid; color:crimson" src="https://icanmodels.s3.amazonaws.com/images/wbIcanImage/ThumbnailImageLarge/tarras-weir-8.jpg" alt="Picture of Tarras Weir" width="240" height="300"> 
     <!-- Adds navbar.html to the end of it-->
     {% include 'navbar.html' %}
 
     <!--Include the navigation buttons here. -->
     <button onclick="window.location.href = 'tarrascv'" >My CV </button>
     <button> Cover Letter </button>
-    <Button> About me </Button>
+    <Button onclick="window.location.href = 'about'" > About me </Button>
     
     <!-- This is where the inserted block content will be written.-->
     {% block content %}
